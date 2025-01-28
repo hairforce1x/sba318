@@ -26,6 +26,8 @@ router.get('/courses', (req, res) => {
     res.send(courses)
 })
 
+router.put('courses/')
+
 router.get('/scores', (req, res) => {
     console.log(scores)
     res.send(scores)
