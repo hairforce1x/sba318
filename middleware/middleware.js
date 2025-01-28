@@ -6,6 +6,8 @@ const logger = (req, res, next) => {
     next();
 };
 
+// This started firing when I added put method to courses so I commented it out
+
 // const validateGolfer = (req, res, next) => {
 //     try {
 //         if (typeof req.body.name !== "string") {
