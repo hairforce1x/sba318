@@ -18,7 +18,7 @@ router.post('/golfers', (req,res) => {
         name,
     }
     golfers.push(newPlayer)
-    res.status(201).send(newPlayer)
+    res.status(200).send(newPlayer)
 })
 
 router.get('/courses', (req, res) => {
@@ -26,7 +26,13 @@ router.get('/courses', (req, res) => {
     res.send(courses)
 })
 
-router.put('courses/')
+router.put('/courses/:id/par', (req, res) => {
+    const courseId = parseInt(req.params.id);
+    const { par } = req.body;
+    const course = courses.find(course=>course.id === courseId);
+    course.par = par;
+    res.status(200).send(course)
+})
 
 router.get('/scores', (req, res) => {
     console.log(scores)
