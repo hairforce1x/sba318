@@ -1,15 +1,15 @@
 const golfers = [
-    {id: 1,
-    name: "Tiger",
-    scores: [],
+    {
+        id: 1,
+        name: "Tiger",
     },
-    {id: 2,
+    {
+        id: 2,
         name: "Freddie",
-        scores: [],
     },
-    {id: 3,
+    {
+        id: 3,
         name: "Sergio",
-        scores: [],
     }
 ]
 

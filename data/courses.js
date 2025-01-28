@@ -8,3 +8,5 @@ const courses = [
         name: "Valley Hi"
     }
 ]
+
+module.exports = courses
